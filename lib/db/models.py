@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import MetaData
-from sqlalchemy.orm import validates
-from sqlalchemy_serializer import SerializerMixin
+# from sqlalchemy import MetaData
+# from sqlalchemy.orm import validates
+# from sqlalchemy_serializer import SerializerMixin
 
 
 ##Unsure of imports
@@ -34,7 +34,7 @@ class Bean(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     bean_type = db.Column(db.String)
-    location = db.Column(db.String, ForeignKey('bean_locations.location'))
+    location = db.Column(db.String, ForeignKey('locations.id'))
     flavor_profile = db.Column(db.String)
 
 class Location(db.Model):
@@ -42,15 +42,15 @@ class Location(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     location = db.Column(db.String, unique=True)
-    shops = relationship('Shop', backref='location')
-    beans = relationship('Bean', backref='location')
+    shops = relationship('Shop', backref='locations')
+    beans = relationship('Bean', backref='locations')
 
 class Shop(db.Model):
     __tablename__ = "shops"
 
     id = db.Column(db.Integer, primary_key=True)
     shop_name = db.Column(db.String)
-    shop_location = db.Column(db.String, ForeignKey('shop_locations.location'))
+    shop_location = db.Column(db.String, ForeignKey('locations.id'))
     rating = db.Column(db.String)
 
     
@@ -65,4 +65,16 @@ coffee_beans = db.Table('coffee_beans',
 )
 
 
+class ShopMenu (db.Model):
+    __tablename__= "shopsmenu"
 
+    id = db.Column(db.Integer, primary_key= True)
+    shop_id = db.Column(db.Integer)
+    coffee_id = db.Column(db.Integer)
+
+
+#creates a many to many relationship between the coffee and shop menu tables
+coffee_menus = db.Table('coffee_menus',
+    db.Column('coffee_id', db.Integer, ForeignKey('coffees.id'), primary_key = True),
+    db.Column('shop_id', db.Integer, ForeignKey('shops.id'), primary_key = True)   
+)
