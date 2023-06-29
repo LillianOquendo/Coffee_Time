@@ -1,35 +1,34 @@
  
+#import models
+
+
+# def shop_info(shop): #return the shop name location and rating
+#     name = shop.name 
+#     rating = shop.rating
+#     location = shop.location
+#     shop_info = f'{name} is located in {location} and has a rating of {rating}'
+#     return shop_info
+
+
+def select_shop(shoplist): #session to access the db
+   #print out the list of shops
+   print(shoplist)
+   shop = input("Which shop would you like to go to?")
+   return shop 
+
+def get_menu(session, shop):
+
+    shop_id = session.query 
+
+
+    for record in menu:
+        print(f'{record.name} is {record.price}')
 
 
 
-def shop_info(shop): #return the shop name location and rating
-    name = shop.name 
-    rating = shop.rating
-    location = shop.location
-    shop_info = f'{name} is located in {location} and has a rating of {rating}'
-    return shop_info
-
-def filtering(filterby, val): #Generic filter?
-    #filterby should rating, location, 
-
-    shops = CoffeeShop.all     #All the coffeeshops
-
-    return [shop_list]
 
 
-def select_shop(shoplist):
-   #for id in shopidlist find the matching one and return the values
-   #shop = shop.id
-   #name = shop
-   #get menu
-   pass
-
-def get_menu(shop):
-    #get the id of the shop and query the coffee table for rows that have coffeeshop_id match that match
-    #return the info to the list
-    pass
-
-def cart():
+def cart(session):
     order_list = [] 
     pass
 
@@ -44,8 +43,9 @@ def clear_cart():
 
 
 
-def total(cart):
+def total(session, cart):
     total = 0
     for coffee in cart:
-        total += coffee.price
+        price = session.query(COFFEE.price).filter(COFFEE.NAME ==)
+        total += price
     return total
