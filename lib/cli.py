@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from db.models import Shop, Coffee
-from helpers import get_menu
 
 #!/usr/bin/env python3
 

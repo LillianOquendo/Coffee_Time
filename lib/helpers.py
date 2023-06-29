@@ -44,8 +44,4 @@ def clear_cart():
 
 
 def total(session, cart):
-    total = 0
-    for coffee in cart:
-        price = session.query(COFFEE.price).filter(COFFEE.NAME ==)
-        total += price
-    return total
+    pass
