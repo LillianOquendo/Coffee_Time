@@ -72,77 +72,77 @@ if __name__ == "__main__":
         shops = [
             Shop(
                 shop_name = 'Bakeri',
-                shop_location_id = 7,
+                shop_location_id = 'Brooklyn',
                 rating = '5'
             ),
             Shop(
                 shop_name = 'Cafe Grumpy',
-                shop_location_id = 8,
+                shop_location_id = 'Manhattan',
                 rating = '3'
             ),
             Shop(
                 shop_name = 'Ten Thousand Coffees',
-                shop_location_id = 6,
+                shop_location_id = 'Queens',
                 rating = '1'
             ),
             Shop(
                 shop_name = 'Butler Bakeshop',
-                shop_location_id = 7,
+                shop_location_id = 'Brooklyn',
                 rating = '4'
             ),
             Shop(
                 shop_name = 'Devocion',
-                shop_location_id = 7,
+                shop_location_id = 'Brooklyn',
                 rating = '2'
             ),
             Shop(
                 shop_name = 'Kobrick Coffee Company',
-                shop_location_id = 8,
+                shop_location_id = 'Manhattan',
                 rating = '4'
             ),
             Shop(
                 shop_name = 'Maman',
-                shop_location_id = 7,
+                shop_location_id = 'Brooklyn',
                 rating = '5'
             ),
             Shop(
                 shop_name = 'Arabica',
-                shop_location_id = 7,
+                shop_location_id = 'Brooklyn',
                 rating = '3'
             ),
             Shop(
                 shop_name = 'Felix Roasting Company',
-                shop_location_id = 8,
+                shop_location_id = 'Manhattan',
                 rating = '4'
             ),
             Shop(
                 shop_name = 'PlantShed',
-                shop_location_id = 6,
+                shop_location_id = 'Queens',
                 rating = '2'
             ),
             Shop(
                 shop_name = 'Masseria',
-                shop_location_id = 7,
+                shop_location_id = 'Brooklyn',
                 rating = '5'
             ),
             Shop(
                 shop_name = 'Hungry Ghost',
-                shop_location_id = 6,
+                shop_location_id = 'Queens',
                 rating = '1'
             ),
             Shop(
                 shop_name = 'Ralphs Coffee',
-                shop_location_id = 6,
+                shop_location_id = 'Queens',
                 rating = '5'
             ),
             Shop(
-                shop_name = 'Stumptown Coffee',
-                shop_location_id = 7,
+                shop_name = 'stumptown coffee',
+                shop_location_id = 'Brooklyn',
                 rating = '3'
             ),
             Shop(
                 shop_name = 'Partners Coffee',
-                shop_location_id = 6,
+                shop_location_id = 'Queens',
                 rating = '2'
             )
         ]
@@ -178,244 +178,244 @@ if __name__ == "__main__":
 # ##Shop Menu Data
         menus = [
             ShopMenu(
-                shop_id = 1,
-                coffee_id = 4
+                shop_id = 'bakeri',
+                coffee_id = 'folgers'
             ),
             ShopMenu(
-                shop_id = 1,
-                coffee_id = 3
+                shop_id = 'bakeri',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 1,
-                coffee_id = 6
+                shop_id = 'bakeri',
+                coffee_id = 'peets coffee'
             ),
             ShopMenu(
-                shop_id = 1,
-                coffee_id = 2
+                shop_id = 'bakeri',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 2,
-                coffee_id = 5
+                shop_id = 'cafe grumpy',
+                coffee_id = 'illy caffe'
             ),
             ShopMenu(
-                shop_id = 2,
-                coffee_id = 7
+                shop_id = 'cafe grumpy',
+                coffee_id = 'cafe rico'
             ),
             ShopMenu(
-                shop_id = 2,
-                coffee_id = 9
+                shop_id = 'cafe grumpy',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 2,
-                coffee_id = 10
+                shop_id = 'cafe grumpy',
+                coffee_id = 'breakfast blend'
             ),
             ShopMenu(
-                shop_id = 3,
-                coffee_id = 1
+                shop_id = 'ten thousand coffees',
+                coffee_id = 'cafe bustelo'
             ),
             ShopMenu(
-                shop_id = 3,
-                coffee_id = 3
+                shop_id = 'ten thousand coffees',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 3,
-                coffee_id = 2
+                shop_id = 'ten thousand coffees',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 3,
-                coffee_id = 5
+                shop_id = 'ten thousand coffees',
+                coffee_id = 'illy caffe'
             ),
             ShopMenu(
-                shop_id = 4,
-                coffee_id = 8
+                shop_id = 'butler bakeshop',
+                coffee_id = 'devil mountain'
             ),
             ShopMenu(
-                shop_id = 4,
-                coffee_id = 9
+                shop_id = 'butler bakeshop',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 4,
-                coffee_id = 4
+                shop_id = 'butler bakeshop',
+                coffee_id = 'folgers'
             ),
             ShopMenu(
-                shop_id = 4,
-                coffee_id = 6
+                shop_id = 'butler bakeshop',
+                coffee_id = 'peets coffee'
             ),
             ShopMenu(
-                shop_id = 5,
-                coffee_id = 8
+                shop_id = 'devocion',
+                coffee_id = 'devil mountain'
             ),
             ShopMenu(
-                shop_id = 5,
-                coffee_id = 4
+                shop_id = 'devocion',
+                coffee_id = 'folgers'
             ),
             ShopMenu(
-                shop_id = 5,
-                coffee_id = 3
+                shop_id = 'devocion',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 5,
-                coffee_id = 1
+                shop_id = 'devocion',
+                coffee_id = 'cafe bustelo'
             ),
             ShopMenu(
-                shop_id = 6,
-                coffee_id = 3
+                shop_id = 'kobrick coffee company',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 6,
-                coffee_id = 2
+                shop_id = 'kobrick coffee company',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 6,
-                coffee_id = 10
+                shop_id = 'kobrick coffee company',
+                coffee_id = 'breakfast blend'
             ),
             ShopMenu(
-                shop_id = 6,
-                coffee_id = 8
+                shop_id = 'kobrick coffee company',
+                coffee_id = 'devil mountain'
             ),
             ShopMenu(
-                shop_id = 7,
-                coffee_id = 9
+                shop_id = 'maman',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 7,
-                coffee_id = 7
+                shop_id = 'maman',
+                coffee_id = 'cafe rico'
             ),
             ShopMenu(
-                shop_id = 7,
-                coffee_id = 6
+                shop_id = 'maman',
+                coffee_id = 'peets coffee'
             ),
             ShopMenu(
-                shop_id = 7,
-                coffee_id = 2
+                shop_id = 'maman',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 8,
-                coffee_id = 1
+                shop_id = 'arabica',
+                coffee_id = 'cafe bustelo'
             ),
             ShopMenu(
-                shop_id = 8,
-                coffee_id = 3
+                shop_id = 'arabica',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 8,
-                coffee_id = 4
+                shop_id = 'arabica',
+                coffee_id = 'folgers'
             ),
             ShopMenu(
-                shop_id = 8,
-                coffee_id = 7
+                shop_id = 'arabica',
+                coffee_id = 'cafe rico'
             ),
             ShopMenu(
-                shop_id = 9,
-                coffee_id = 2
+                shop_id = 'felix roasting company',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 9,
-                coffee_id = 5
+                shop_id = 'felix roasting company',
+                coffee_id = 'illy caffe'
             ),
             ShopMenu(
-                shop_id = 9,
-                coffee_id = 8
+                shop_id = 'felix roasting company',
+                coffee_id = 'devil mountain'
             ),
             ShopMenu(
-                shop_id = 9,
-                coffee_id = 6
+                shop_id = 'felix roasting company',
+                coffee_id = 'peets coffee'
             ),
             ShopMenu(
-                shop_id = 10,
-                coffee_id = 3
+                shop_id = 'plantshed',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 10,
-                coffee_id = 7
+                shop_id = 'plantshed',
+                coffee_id = 'cafe rico'
             ),
             ShopMenu(
-                shop_id = 10,
-                coffee_id = 9
+                shop_id = 'plantshed',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 10,
-                coffee_id = 10
+                shop_id = 'plantshed',
+                coffee_id = 'breakfast blend'
             ),
             ShopMenu(
-                shop_id = 11,
-                coffee_id = 4
+                shop_id = 'masseria',
+                coffee_id = 'folgers'
             ),
             ShopMenu(
-                shop_id = 11,
-                coffee_id = 3
+                shop_id = 'masseria',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 11,
-                coffee_id = 2
+                shop_id = 'masseria',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 11,
-                coffee_id = 1
+                shop_id = 'masseria',
+                coffee_id = 'cafe bustelo'
             ),
             ShopMenu(
-                shop_id = 12,
-                coffee_id = 5
+                shop_id = 'hungry ghost',
+                coffee_id = 'illy caffe'
             ),
             ShopMenu(
-                shop_id = 12,
-                coffee_id = 6
+                shop_id = 'hungry ghost',
+                coffee_id = 'peets coffee'
             ),
             ShopMenu(
-                shop_id = 12,
-                coffee_id = 7
+                shop_id = 'hungry ghost',
+                coffee_id = 'cafe rico'
             ),
             ShopMenu(
-                shop_id = 12,
-                coffee_id = 8
+                shop_id = 'hungry ghost',
+                coffee_id = 'devil mountain'
             ),
             ShopMenu(
-                shop_id = 13,
-                coffee_id = 10
+                shop_id = 'ralphs coffee',
+                coffee_id = 'breakfast blend'
             ),
             ShopMenu(
-                shop_id = 13,
-                coffee_id = 9
+                shop_id = 'ralphs coffee',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 13,
-                coffee_id = 1
+                shop_id = 'ralphs coffee',
+                coffee_id = 'cafe bustelo'
             ),
             ShopMenu(
-                shop_id = 13,
-                coffee_id = 2
+                shop_id = 'ralphs coffee',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 14,
-                coffee_id = 3
+                shop_id = 'stumptown coffee',
+                coffee_id = 'maxwell house'
             ),
             ShopMenu(
-                shop_id = 14,
-                coffee_id = 4
+                shop_id = 'stumptown coffee',
+                coffee_id = 'folgers'
             ),
             ShopMenu(
-                shop_id = 14,
-                coffee_id = 5
+                shop_id = 'stumptown coffee',
+                coffee_id = 'illy caffe'
             ),
             ShopMenu(
-                shop_id = 14,
-                coffee_id = 6
+                shop_id = 'stumptown coffee',
+                coffee_id = 'peets coffee'
             ),
             ShopMenu(
-                shop_id = 15,
-                coffee_id = 7
+                shop_id = 'partners coffee',
+                coffee_id = 'cafe rico'
             ),
             ShopMenu(
-                shop_id = 15,
-                coffee_id = 8
+                shop_id = 'partners coffee',
+                coffee_id = 'devil mountain'
             ),
             ShopMenu(
-                shop_id = 15,
-                coffee_id = 9
+                shop_id = 'partners coffee',
+                coffee_id = 'lavazza'
             ),
             ShopMenu(
-                shop_id = 15,
-                coffee_id = 10
+                shop_id = 'partners coffee',
+                coffee_id = 'breakfast blend'
             )
         ]
 
@@ -430,6 +430,11 @@ if __name__ == "__main__":
             Location(location = 'Brooklyn'),
             Location(location = 'Manhattan')
         ]
+        db.session.query(Shop).delete()
+        db.session.query(Bean).delete()
+        db.session.query(Coffee).delete()
+        db.session.query(Location).delete()
+        db.session.query(ShopMenu).delete()
         db.session.add_all(beans)
         db.session.add_all(coffees)
         db.session.add_all(shops)

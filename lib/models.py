@@ -44,7 +44,7 @@ class Shop(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     shop_name = db.Column(db.String)
-    shop_location_id = db.Column(db.Integer, db.ForeignKey('locations.id'))
+    shop_location_id = db.Column(db.String, db.ForeignKey('locations.id'))
     shop_locations = db.relationship('Location', backref='shop')
     rating = db.Column(db.String)
 
@@ -65,8 +65,8 @@ class ShopMenu (db.Model):
     __tablename__= "shopsmenu"
 
     id = db.Column(db.Integer, primary_key= True)
-    shop_id = db.Column(db.Integer, db.ForeignKey('shops.id'))
-    coffee_id = db.Column(db.Integer, db.ForeignKey('coffees.id'))
+    shop_id = db.Column(db.String, db.ForeignKey('shops.id'))
+    coffee_id = db.Column(db.String, db.ForeignKey('coffees.id'))
 
 
 # #creates a many to many relationship between the coffee and shop menu tables
