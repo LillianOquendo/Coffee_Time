@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from db.models import Shop, Coffee, ShopMenu
-
+#from lib.models import Shop, Coffee, ShopMenu
+from models import Shop, ShopMenu #, Coffee 
 #!/usr/bin/env python3
 
 engine = create_engine('sqlite:///db/coffee_database.db')
@@ -33,8 +33,7 @@ if __name__ == '__main__':
         # 2. Print out the list of shops 
         # 3. User selects a shop on the list
 
-        shop_list = session.query(Shop)
-        #.filter(Shop.shop_location == user_location)   #list of records where shop location matches the users location.
+        shop_list = session.query(Shop).filter(Shop.shop_location == user_location)   #list of records where shop location matches the users location.
         print(shop_list)
 
         for shop in shop_list:  #print out the shops in the list

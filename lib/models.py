@@ -18,7 +18,6 @@ class Coffee(db.Model):
     __tablename__ = "coffees"
 
     id = db.Column(db.Integer, primary_key=True)
-    coffeeshop_id = db.Column(db.Integer, ForeignKey('shops.id'))
     name = db.Column(db.String)
     roast = db.Column(db.String)
     coarse_vs_fine = db.Column(db.Boolean)

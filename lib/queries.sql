@@ -2,7 +2,7 @@
 --user can see all costs
 --user can see coffee details (name, roast, flavor profile, bean)
 --git stDecide on a many to many to show
---
+
 
 CREATE TABLE COFFEE(
     id INTEGER PRIMARY KEY,
@@ -117,6 +117,7 @@ VALUES ('Kopi luwak', 'Puerto Rico', 'Earthy and musty with hints of caramel and
 
 INSERT INTO BEAN (BEAN_TYPE, LOCATION, FLAVOR_PROFILE)
 VALUES ('Coffea liberica', 'Cuba', 'Smoky, nutty, floral with hints of dark chocolate, ripe berry and spice.');
+
 
 
 
