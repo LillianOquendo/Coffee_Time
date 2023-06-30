@@ -6,8 +6,8 @@ from models import db
 
 app = Flask(__name__)
 
-#app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///Coffee_Time_app.db"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///coffee_database.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///Coffee_Time_app.db"
+#app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///coffee_database.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 app.json.compact = False
